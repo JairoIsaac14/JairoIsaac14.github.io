@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carta de San Valentín</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-image: url('fondo-valentines.jpg'); /* Tu imagen de corazones */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        /* Video de fondo */
+        .video-fondo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.92);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            position: relative;
+            backdrop-filter: blur(3px);
+        }
+
+        h1 {
+            color: #e91e63;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .fecha {
+            text-align: right;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .imagen-amor {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        .carta {
+            white-space: pre-line;
+            text-align: justify;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .firma {
+            text-align: right;
+            margin-top: 40px;
+            font-style: italic;
+            color: #d32f2f;
+        }
+
+        .corazon {
+            color: #e91e63;
+            font-size: 24px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            animation: latido 1.5s infinite;
+        }
+
+        @keyframes latido {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+                margin: 0;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <video class="video-fondo" autoplay loop muted>
+        <source src="video-fondo.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <div class="container">
+        <div class="corazon">❤</div>
+        <h1>Carta de San Valentín</h1>
+        <div class="fecha">14 de febrero de 2025</div>
+        
+        <div class="carta">
+Mi amor:
+
+Han pasado casi dos años desde que el destino decidió unirnos, y cada día a tu lado ha sido un regalo que atesoro en lo más profundo de mi corazón. En este San Valentín, quiero detenerme un momento para expresarte todo lo que significas para mí.
+
+Recuerdo como si fuera ayer nuestros primeros momentos juntos, esas miradas tímidas y las conversaciones que parecían no tener fin. Desde entonces, hemos crecido tanto, hemos construido tantos recuerdos hermosos, y mi amor por ti solo se ha hecho más fuerte y más profundo.
+
+Me encanta cómo me haces reír cuando más lo necesito, cómo tus abrazos se han convertido en mi lugar favorito en el mundo, y cómo, incluso en los momentos difíciles, encontramos la manera de superarlos juntos. Has estado ahí en mis alegrías y en mis tristezas, celebrando mis logros y apoyándome en mis fracasos.
+
+Estos casi dos años han sido una aventura maravillosa. Hemos aprendido juntos, hemos soñado juntos, y poco a poco hemos ido construyendo nuestra propia historia de amor. Me fascina ver cómo seguimos descubriendo cosas nuevas el uno del otro, cómo cada día encuentro más razones para amarte.
+
+En este día especial, quiero que sepas que mi corazón late más fuerte cuando estoy contigo, que mis días son más brillantes por tu presencia, y que no puedo imaginar un futuro donde no estés tú. Eres mi compañero/a, mi mejor amigo/a, mi amor, mi todo.
+
+Gracias por estos casi dos años de amor, risas, aprendizajes y momentos inolvidables. Gracias por ser exactamente quien eres y por amarme como lo haces. Este es solo el comienzo de nuestra historia, y no puedo esperar para seguir escribiendo más capítulos a tu lado.</div>
+
+        <div class="firma">
+            Te amo con todo mi corazón,
+            Glenys Esther Rodriguez Alvarado
+        </div>
+        <img src="tu-imagen.jpg" alt="Foto de amor" class="imagen-amor">
+    </div>
+</body>
+</html>
